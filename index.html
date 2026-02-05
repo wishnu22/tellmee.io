@@ -88,21 +88,22 @@
         100% { transform: translateY(-800px) scale(1.8); opacity: 0; }
     }
 
-    /* Special I LOVE YOU message */
-    #loveMessage {
+        #popup {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 70px;
-        color: #310c02;
-        text-shadow: 0 0 20px white;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #00000040;
         display: none;
-        animation: popIn 1.2s ease forwards;
-        z-index: 5
+        font-size: 28px;
+        color: #b3004b;
+    }
 
         
-    }
+    
 
     @keyframes popIn {
         0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
@@ -145,8 +146,7 @@
 <button class="btn" id="yesBtn" onclick="yesClicked()">Yes</button>
 <button class="btn" id="noBtn" onmouseover="moveNoButton()">No</button>
 
-<div id="loveMessage">I LOVE YOU TOOOO❤️</div>
-<div id="screenGlow"></div>
+<div id="popup">Yay! ❤️ I knew you'd say YES!</div>
 
 <script>
     const music = document.getElementById("bgMusic");
@@ -190,3 +190,4 @@
 
 </body>
 </html>
+
